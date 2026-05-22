@@ -1,0 +1,2 @@
+#define TARGET_SYNX_ENABLE 1
+#define CONFIG_QTI_HW_FENCE 1

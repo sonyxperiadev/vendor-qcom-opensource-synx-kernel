@@ -18,6 +18,11 @@ include $(SYNX_ROOT)/config/waipiosynx.conf
 LINUXINCLUDE += -include $(SYNX_ROOT)/config/waipiosynxconf.h
 endif
 
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+include $(SYNX_ROOT)/config/kalamasynx.conf
+LINUXINCLUDE += -include $(SYNX_ROOT)/config/kalamasynxconf.h
+endif
+
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 include $(SYNX_ROOT)/config/pineapplesynx.conf
 LINUXINCLUDE += -include $(SYNX_ROOT)/config/pineapplesynxconf.h
